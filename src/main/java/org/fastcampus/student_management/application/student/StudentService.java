@@ -13,7 +13,8 @@ public class StudentService {
   }
 
   public void saveStudent(StudentInfoDto studentInfoDto) {
-    Student student = new Student(studentInfoDto.getName(), studentInfoDto.getAge(), studentInfoDto.getAddress());
+    Student student = new Student(studentInfoDto.getName(), studentInfoDto.getAge(),
+        studentInfoDto.getAddress());
     studentRepository.save(student);
   }
 
@@ -23,10 +24,12 @@ public class StudentService {
   }
 
   public void activateStudent(String name) {
-    // TODO: 과제 구현 부분
+    Student student = getStudent(name);
+    student.activate();
   }
 
   public void deactivateStudent(String name) {
-    // TODO: 과제 구현 부분
+    Student student = getStudent(name);
+    student.deactivate();
   }
 }

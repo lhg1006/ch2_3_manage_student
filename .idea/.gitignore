@@ -1,0 +1,21 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# IntelliJ IDEA 관련 파일 및 설정
+.idea/
+*.iml
+
+# Gradle 관련 파일 및 디렉토리
+.gradle/
+build/
+
+# 특정 파일을 제외한 경우
+!.gitignore
